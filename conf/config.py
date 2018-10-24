@@ -4,7 +4,7 @@
 import time
 import uuid
 access_key_id = 'LTAIOgTV3xSHMLuh'
-access_key_secret = 'BtlEg7CJaBkaSQallgkgXKviY7afYF'
+access_key_secret = '123'
 timestamp = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime(time.time()))
 parameters = {
     'Format': 'JSON',
