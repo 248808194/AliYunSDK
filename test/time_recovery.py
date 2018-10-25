@@ -21,17 +21,21 @@ class time_recovery():
     def datetime_timestamp(self,dt):
         # dt为字符串
         # 中间过程，一般都需要将字符串转化为时间数组
-        time.strptime(dt, '%Y-%m-%d %H:%M:%S.%f')
+        # time.strptime(dt, '%Y-%m-%d %H:%M:%S.%f')
+        time.strptime(dt, '%Y-%m-%d')
         ## time.struct_time(tm_year=2012, tm_mon=3, tm_mday=28, tm_hour=6, tm_min=53, tm_sec=40, tm_wday=2, tm_yday=88, tm_isdst=-1)
         # 将"2012-03-28 06:53:40"转化为时间戳
-        s = time.mktime(time.strptime(dt, '%Y-%m-%d %H:%M:%S.%f'))
+        s = time.mktime(time.strptime(dt, '%Y-%m-%d'))
         return int(s)
 
 # T = time_recovery()
 # T.timestamp_datetime(1540212316536)
 # if __name__ == '__main__':
+#     a=1540212308
+#     # a=int(a) / 1000
+#     print(a)
 #     T = time_recovery()
 #     # d = T.datetime_timestamp('2012-03-28 06:53:40')
 #     # print(d)
-#     s = T.timestamp_datetime(1540212316536)
+#     s = T.timestamp_datetime(a)
 #     print(s)

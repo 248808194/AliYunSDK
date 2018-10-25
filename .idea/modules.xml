@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../2.7/.idea/2.7.iml" filepath="$PROJECT_DIR$/../2.7/.idea/2.7.iml" />
       <module fileurl="file://$PROJECT_DIR$/../AliYunSDK/.idea/AliYunSDK.iml" filepath="$PROJECT_DIR$/../AliYunSDK/.idea/AliYunSDK.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/untitled.iml" filepath="$PROJECT_DIR$/.idea/untitled.iml" />
     </modules>
